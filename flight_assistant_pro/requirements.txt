@@ -1,0 +1,7 @@
+streamlit
+pandas
+duckdb
+google-generativeai
+faiss-cpu
+python-dotenv
+networkx
