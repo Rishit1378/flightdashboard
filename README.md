@@ -74,56 +74,56 @@ Built with a hybrid approach combining **DuckDB, FAISS, NetworkX, Streamlit, and
 
 ## 📂 Project Structure
 flightdashboard/
-│── app.py # Streamlit dashboard
-│── embed_schema.py # Prepares schema knowledge base and rotation graph
-│── requirements.txt # Dependencies
-│── flights.db # DuckDB database (auto-generated)
-│── detailed_flights.csv # Input flight dataset
-│── schema.index # FAISS index of schema embeddings
-│── schema_mapping.pkl # Schema description mappings
-│── rotations_graph.gpickle # Flight rotation graph
-│── .env # Contains GEMINI_API_KEY
-│── venv/ # Virtual environment (optional)
+- │── app.py # Streamlit dashboard
+- │── embed_schema.py # Prepares schema knowledge base and rotation graph
+- │── requirements.txt # Dependencies
+- │── flights.db # DuckDB database (auto-generated)
+- │── detailed_flights.csv # Input flight dataset
+- │── schema.index # FAISS index of schema embeddings
+- │── schema_mapping.pkl # Schema description mappings
+- │── rotations_graph.gpickle # Flight rotation graph
+- │── .env # Contains GEMINI_API_KEY
+- │── venv/ # Virtual environment (optional)
 
 ---
 
 ## 🛠️ Setup & Installation
 **Clone the Repository**
-   -git clone https://github.com/Rishit1378/flightdashboard.git
-   -cd flightdashboard
+   - git clone https://github.com/Rishit1378/flightdashboard.git
+   - cd flightdashboard
 
 **Create Virtual Environment**
-  -python -m venv venv
-  -source venv/bin/activate   # Mac/Linux
-  -venv\Scripts\activate      # Windows
+  - python -m venv venv
+  - source venv/bin/activate   # Mac/Linux
+  - venv\Scripts\activate      # Windows
   
 **Install Dependencies**
-  -pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 **Set Up Environment Variables**
-  -Create a .env file in the root directory:
-  -GEMINI_API_KEY=your_api_key_here
+  - Create a .env file in the root directory:
+  - GEMINI_API_KEY=your_api_key_here
 
 **Prepare Knowledge Base**
-  -python embed_schema.py
+  - python embed_schema.py
 
 **Run the Application**
-  -streamlit run app.py
+  - streamlit run app.py
 
 **Requirements**
--Python 3.9+
--Google Gemini API key
--Dependencies listed in requirements.txt:
-  -streamlit
-  -pandas
-  -duckdb
-  -google-generativeai
-  -faiss-cpu
-  -python-dotenv
-  -networkx
+- Python 3.9+
+- Google Gemini API key
+- Dependencies listed in requirements.txt:
+  - streamlit
+  - pandas
+  - duckdb
+  - google-generativeai
+  - faiss-cpu
+  - python-dotenv
+  - networkx
 
 **🔮 Future Enhancements**
-  -Visualization of delay propagation using network graphs.
-  -Support for multi-airline / multi-aircraft complex schedules.
-  -Integration with real-time flight data APIs.
-  -Advanced natural language support for multi-step queries.
+  - Visualization of delay propagation using network graphs.
+  - Support for multi-airline / multi-aircraft complex schedules.
+  - Integration with real-time flight data APIs.
+  - Advanced natural language support for multi-step queries.
